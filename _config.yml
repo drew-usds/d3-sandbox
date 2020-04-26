@@ -24,6 +24,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
+# Data settings
+data_dir : _data
+# Assets settings
+sass:
+  sass_dir: assets/stylesheets/
+  style: compressed
+
+# Plugins
 plugins:
   - jekyll-feed
 
