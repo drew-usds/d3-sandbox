@@ -19,13 +19,13 @@ https://designsystem.digital.gov/design-tokens
 
 /*
 ----------------------------------------
-Image Path
+Image path
 ----------------------------------------
 Relative image file path
 ----------------------------------------
 */
 
-$theme-image-path: "../img";
+$theme-image-path: "../img" !default;
 
 /*
 ----------------------------------------
@@ -38,8 +38,8 @@ Show updates and notifications.
 ----------------------------------------
 */
 
-$theme-show-compile-warnings: true;
-$theme-show-notifications: true;
+$theme-show-compile-warnings: true !default;
+$theme-show-notifications: true !default;
 
 /*
 ----------------------------------------
@@ -56,7 +56,7 @@ $theme-namespace: (
     namespace: "u-",
     output: false
   )
-);
+) !default;
 
 /*
 ----------------------------------------
@@ -79,7 +79,7 @@ property of all site elements to
 ----------------------------------------
 */
 
-$theme-global-border-box-sizing: true;
+$theme-global-border-box-sizing: true !default;
 
 /*
 ----------------------------------------
@@ -87,10 +87,10 @@ Focus styles
 ----------------------------------------
 */
 
-$theme-focus-color: "blue-40v";
-$theme-focus-offset: 0;
-$theme-focus-style: solid;
-$theme-focus-width: 0.5;
+$theme-focus-color: "blue-40v" !default;
+$theme-focus-offset: 0 !default;
+$theme-focus-style: solid !default;
+$theme-focus-width: 0.5 !default;
 
 /*
 ----------------------------------------
@@ -98,4 +98,4 @@ Icons
 ----------------------------------------
 */
 
-$theme-icon-image-size: 2;
+$theme-icon-image-size: 2 !default;

@@ -36,7 +36,10 @@ PATHS
 */
 
 // Project Sass source directory
-const PROJECT_SASS_SRC = "./assets/uswds-sass";
+const PROJECT_SASS_SRC = "./assets/uswds-theme";
+
+// Project Sass source directory
+const PROJECT_USWDS_SASS_SRC = './assets/uswds-sass';
 
 // Images destination
 const IMG_DEST = "./assets/img";
@@ -53,7 +56,7 @@ const CSS_DEST = "./assets/uswds";
 // Site CSS destination
 // Like the _site/assets/css directory in Jekyll, if necessary.
 // If using, uncomment line 106
-const SITE_CSS_DEST = "path/to/site/css/destination";
+// const SITE_CSS_DEST = "path/to/site/css/destination";
 
 
 /*
@@ -66,6 +69,21 @@ gulp.task("copy-uswds-setup", () => {
   return gulp
     .src(`${uswds}/scss/theme/**/**`)
     .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
+});
+
+gulp.task('copy-uswds-core', () => {
+  return gulp.src(`${uswds}/scss/core/**/**`)
+  .pipe(gulp.dest(`${PROJECT_USWDS_SASS_SRC}/core`));
+});
+
+gulp.task('copy-uswds-lib', () => {
+  return gulp.src(`${uswds}/scss/lib/**/**`)
+  .pipe(gulp.dest(`${PROJECT_USWDS_SASS_SRC}/lib`));
+});
+
+gulp.task('copy-uswds-settings', () => {
+  return gulp.src(`${uswds}/scss/settings/**/**`)
+  .pipe(gulp.dest(`${PROJECT_USWDS_SASS_SRC}/settings`));
 });
 
 gulp.task("copy-uswds-fonts", () => {
@@ -123,6 +141,9 @@ gulp.task(
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",
+    "copy-uswds-core",
+    "copy-uswds-lib",
+    "copy-uswds-settings",
     "copy-d3-js",
     "build-sass"
   )
