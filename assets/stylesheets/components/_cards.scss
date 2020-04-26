@@ -3,7 +3,7 @@
 }
 
 .site-c-card {
-  border: 1px solid $color-usds-gray-light;
+  border: 1px solid $color-gray-60;
   border-radius: 8px;
   overflow: hidden;
   height: 100%;
@@ -13,7 +13,7 @@
 .site-c-card--linked,
 .site-c-card--linked:visited {
   box-shadow: 0 2px 8px rgba(0,0,0,0);
-  color: $color-usds-gray;
+  color: $color-gray-70;
   display: block;
   text-decoration: none;
   transition: all .2s ease-in-out;
@@ -25,7 +25,7 @@
 
 .site-c-card--linked:hover,
 .site-c-card--linked:focus  {
-  color: $color-usds-gray;
+  color: $color-gray-70;
 
   @include at-media('tablet') {
     border: 1px solid $theme-color-primary;

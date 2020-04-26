@@ -39,7 +39,7 @@
   margin-right: $units-1;
 
   svg {
-    fill: $color-usds-gray;
+    fill: $color-gray-80;
     width: units(4);
     height: units(4);
   }
@@ -101,12 +101,12 @@
 
 .site-c-nav__primary-nav__item {
   display: block;
-  border-top: 1px solid $color-usds-gray-light;
+  border-top: 1px solid $color-gray-80;
   margin: 0;
 
   @include at-media('desktop'){
     @include u-font-size('sans', '3xs');
-    border-left: 1px solid $color-usds-gray-light;
+    border-left: 1px solid $color-gray-80;
     border-top: 0;
     padding: 0 $units-2;
   }

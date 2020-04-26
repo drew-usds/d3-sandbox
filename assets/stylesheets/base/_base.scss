@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  color: $color-usds-gray;
+  color: #212121;
   font-size: size('body', 5);
 
   @include at-media('desktop') {
@@ -37,7 +37,7 @@ h3 {
 }
 
 blockquote {
-  border-left: 3px solid $color-usds-gray-light;
+  border-left: 3px solid $color-gray-90;
   padding-left: units(3);
   margin-left: 0;
 }
