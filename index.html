@@ -4,13 +4,18 @@ layout: default
 <div class="grid-container">
   <div class="grid-row">
     <div class="tablet:grid-col">
-      <div class="chart">
-
-      </div>
-      <ul></ul>
+      <h1>State data</h1>
     </div>
-    <div class="tablet:grid-col">tablet:grid-col</div>
-    <div class="tablet:grid-col">tablet:grid-col</div>
-    <div class="tablet:grid-col">tablet:grid-col</div>
+  </div>
+  <div class="grid-row">
+    <div class="tablet:grid-col">
+      {% include chart-a.html %}
+    </div>
+    <div class="tablet:grid-col">
+      {% include chart-b.html %}
+    </div>
+    <div class="tablet:grid-col">
+      {% include chart-c.html %}
+    </div>
   </div>
 </div>
