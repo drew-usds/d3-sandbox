@@ -1,13 +1,15 @@
 ---
 layout: default
+title: State data
 ---
 <div class="grid-container">
   <div class="grid-row">
     <div class="tablet:grid-col">
-      <h1>State data</h1>
+      <small>Updated: {{ "now" | date: "%Y-%m-%d %I:%M %p" }}</small>
+      <h1>{{ page.title }}</h1>
     </div>
   </div>
-  <div class="grid-row">
+  <div class="grid-row grid-gap">
     <div class="tablet:grid-col">
       {% include chart-a.html %}
     </div>

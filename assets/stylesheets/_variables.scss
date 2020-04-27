@@ -1,26 +1,15 @@
 // USWDS Overrides
-$color-grid-dark:   #727272;
-$color-grid-light:  #e3e4e5;
-$font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
 $asset-path: '../';
 $font-path: '#{$asset-path}fonts';
 $image-path: '#{$asset-path}img';
 
 $external-href:     '[href^="http"]:not([href*=".gov"])';
 
-$z-nav-secondary: 10;
-
 // Fix these
 $font-sans: "Source Sans Pro";
 
 // Site image path, relative to /assets/css/
 $site-image-path: '../../img';
-
-// Custom Variables
-$font-light: 300;
-$site-nav-font-size: 1.7rem;
-$media-block-header-font-size: 1.7rem;
-$media-block-body-font-size: 1.5rem;
 
 // Social colors
 
